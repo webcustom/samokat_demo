@@ -1,0 +1,11 @@
+/node_modules/
+/dist/
+/.git/
+/.idea/
+gulpfile.js
+package.json
+package-lock.json
+/**/_backstage
+/**/package-lock.json
+/**/Thumbs.db
+/**/*.DS_Store

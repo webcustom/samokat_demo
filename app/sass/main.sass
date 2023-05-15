@@ -1,0 +1,1618 @@
+@import "fonts"
+// @import "libs"
+@import "vars"
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder 
+	color: #666
+	opacity: 1 
+
+*::-moz-placeholder
+	color: #666 
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666 
+	opacity: 1 
+
+body input:focus:required:invalid,  
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid, 
+body textarea:required:valid
+	color: #666
+
+
+html
+	font-size: 10px
+ 
+body  
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.2
+	overflow-x: hidden
+	color: #000
+	display: flex
+	font-family: $euc
+	&._noScrollBurger
+		overflow: hidden
+	&._noScroll
+		overflow: hidden
+
+
+*
+	box-sizing: border-box
+	outline: none
+	margin: 0
+	padding: 0
+
+
+a 
+	color: inherit
+	text-decoration: none
+	&:hover
+		text-decoration: none
+	&:focus
+		outline: none
+		color: inherit
+		text-decoration: none
+		
+input, textarea
+	appearance: none
+	resize: none
+
+img
+	max-width: 100%
+
+
+.contain
+	max-width: 1225px
+	padding: 0 15px
+	margin: 0 auto
+	//border: 1px solid green
+	&._t2
+		max-width: 1330px
+
+.wrapper
+	min-height: 100vh
+	margin: 0 auto
+	position: relative
+	display: flex
+	flex-direction: column
+	height: 100%
+	overflow: hidden
+	min-width: 100%
+	
+
+.body_content 
+	flex: 1 0 auto
+
+#footer
+	flex: 0 0 auto
+	background-color: #1A1A1A
+	width: 100%
+	margin: 0 auto
+	//padding: 7rem 0 3rem
+
+
+
+._pt10
+    padding-top: 10px
+._pb10
+    padding-bottom: 10px
+._pt15
+    padding-top: 15px
+._pb15
+    padding-bottom: 15px
+._pt20
+    padding-top: 20px
+._pb20
+    padding-bottom: 20px
+._pt30
+    padding-top: 30px
+._pb30
+    padding-bottom: 30px
+._pt40
+    padding-top: 40px
+._pb40
+    padding-bottom: 40px
+._pt50
+    padding-top: 50px
+._pb50
+    padding-bottom: 50px
+._pt60
+    padding-top: 6rem
+._pb60
+    padding-bottom: 6rem
+._pt70
+    padding-top: 7rem
+._pb70
+    padding-bottom: 7rem
+._pt80
+    padding-top: 8rem
+._pb80
+    padding-bottom: 8rem
+._pt90
+    padding-top: 9rem
+._pb90
+    padding-bottom: 9rem
+._pt100
+    padding-top: 10rem
+._pb100
+    padding-bottom: 10rem
+
+._mt5
+    margin-top: 5px
+._mb5
+    margin-bottom: 5px
+._mt10
+    margin-top: 10px
+._mb10
+    margin-bottom: 10px
+._mt15
+    margin-top: 15px
+._mb15
+    margin-bottom: 15px
+._mt20
+    margin-top: 20px
+._mb20
+    margin-bottom: 20px
+._mt30
+    margin-top: 30px
+._mb30
+    margin-bottom: 30px
+._mt40
+    margin-top: 40px
+._mb40
+    margin-bottom: 40px
+._mt50
+    margin-top: 50px
+._mb50
+    margin-bottom: 50px
+._mt60
+    margin-top: 6rem
+._mb60
+    margin-bottom: 6rem
+._mt70
+    margin-top: 7rem
+._mb70
+    margin-bottom: 7rem
+._mt80
+    margin-top: 8rem
+._mb80
+    margin-bottom: 8rem
+._mt90
+    margin-top: 9rem
+._mb90
+    margin-bottom: 9rem
+._mt100
+    margin-top: 10rem
+._mb100
+    margin-bottom: 10rem
+
+
+._center
+    text-align: center
+._right
+    text-align: right
+
+
+.lazyImg
+	opacity: 0
+	transition: all .7s
+
+
+#header
+	font-size: 10px
+	background-color: $red
+	//height: 110px
+	padding: 2.3em 0
+	z-index: 22
+	position: fixed
+	width: 100%
+	top: 0
+	left: 0
+	box-shadow: 0 0 20px 0px rgba(darken($red, 20%), .35)
+	.contain
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&._lazyAnimation
+			opacity: 0
+			transform: translate(0,-100%)
+		&._animGo
+			transition: opacity 1s, transform 1s
+			opacity: 1
+			transform: translate(0,0)
+	.left
+		display: flex
+		align-items: flex-start
+	.logo_min
+		display: none
+		width: 12em
+		height: 8em
+		svg
+			max-width: 100%
+			max-height: 100%
+	.logo_2
+		max-width: 30em
+		&:before
+			content: ''
+			position: absolute
+			height: 100%
+			width: .6em
+			background-color: #fff
+			left: -4em
+			//left: calc(-4.5rem - 3px)
+	.button_1
+		max-width: 11.5em
+		padding: .6em 2em .6em
+		font-size: 2.5em
+		&._open
+			background-color: #fff
+			color: $red !important
+
+.logo_2
+	position: relative
+	display: block
+	//border: 1px solid #fff
+	svg
+		height: 5em
+		//width: 32.8rem
+		fill: #fff
+		width: 100%
+
+.logo_1
+	margin-right: 9em
+	min-width: 22em
+	left: 1em
+	max-width: 22em
+	position: relative
+	display: block
+	svg
+		position: absolute
+		z-index: 1
+		left: calc(50% - 1em)
+		top: 50%
+		max-width: 75%
+		transform: translate(-50%,0%)
+		fill: #fff
+		height: 7em
+	&:before
+		content: ''
+		bottom: -9.3em
+		width: 100%
+		height: 22em
+		left: -1em
+		background: #000
+		position: absolute
+		z-index: 0
+		transform: rotate(90deg) skew(7deg)
+
+
+.button_1
+	display: inline-block
+	width: 100%
+	padding: 2rem 2rem 2rem
+	cursor: pointer
+	//background-color: $red
+	font-size: 2.5rem
+	color: $red !important
+	transition: background .15s, color .15s
+	text-align: center
+	outline: none
+	user-select: none
+	position: relative
+	text-decoration: none
+	font-family: $euc
+	font-weight: 500
+	border-radius: 70px
+	border: 1px solid $red
+	background: none
+	//&:hover
+	//	background-color: $red
+	//	color: #fff !important
+	&:active
+		top: 3px
+		transition: all 0s
+		background-color: darken($red, 5%) !important
+	&._t2
+		border-color: #fff
+		color: #fff !important
+		padding: 1.2rem 2rem 1.4rem
+		//&:hover
+		//	background-color: #fff
+			color: $red !important
+		&:active
+			background-color: darken(#fff, 5%) !important
+	&._t3
+		background-color: $red
+		border: none
+		color: #fff !important
+		//&:hover
+		//	background-color: darken($red, 10%)
+		&:active
+			background-color: darken($red, 15%) !important
+	&._t4
+		background-color: #fff
+		border: none
+		color: #000 !important
+		//&:hover
+		//	background-color: lighten($red, 35%)
+		&:active
+			background-color: #fff !important
+
+
+
+.sectionMain
+	background-color: #FFD1E9
+	padding: 8.8em 0 22em
+	font-size: 10px
+
+.mainItem
+	//border: 1px solid red
+	text-align: center
+	max-width: 100em
+	margin: 0 auto
+	position: relative
+	z-index: 0
+	padding-top: 10em
+	&:before
+		content: ''
+		position: absolute
+		box-shadow: 0 0 30em 40em rgba(#fff, .7)
+		border-radius: 50%
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		z-index: -1
+		//width: 5px
+		//height: 5px
+	.logo
+		max-width: 40em
+		margin-left: auto
+		margin-right: auto
+		p
+			font-size: 2em
+			text-transform: uppercase
+			font-weight: 700
+			margin-top: .5em
+		&._lazyAnimation
+			opacity: 0
+			transform: translate(0, -30px)
+		&._animGo
+			transition: opacity 1s, transform 1s
+			opacity: 1
+			transform: translate(0, 0)
+	.t1
+		font-size: 2.9em
+		font-weight: 700
+		margin-top: 2.5em
+		line-height: 1.5
+		text-transform: uppercase
+		&._lazyAnimation
+			opacity: 0
+			transform: translate(0, 30px)
+		&._animGo
+			transition: opacity 1s, transform 1s
+			opacity: 1
+			transform: translate(0, 0)
+	.t3
+		font-size: 3.4em
+		font-weight: 500
+		margin-top: 1.6em
+		span
+			font-weight: 700
+		svg
+			width: 1.2em
+			height: 1.2em
+			display: inline-block
+			top: .22em
+			position: relative
+		&._lazyAnimation
+			opacity: 0
+			transform: translate(0, 30px)
+		&._animGo
+			transition: opacity 1s, transform 1s
+			opacity: 1
+			transform: translate(0, 0)
+	.button_1
+		max-width: 12em
+		margin-top: 3.2em
+		font-size: 2.5em
+		padding: .8em .8em
+		&._lazyAnimation
+			opacity: 0
+			transform: translate(0, 30px)
+		&._animGo
+			transition: opacity 1s, transform 1s
+			opacity: 1
+			transform: translate(0, 0)
+
+
+.decoreImg
+	position: absolute
+	z-index: -1
+	transition: transform 0s, opacity 1s
+	&._d1
+		width: 6.6em
+		top: 10%
+		right: 70%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d2
+		width: 6.8em
+		bottom: 15%
+		left: 110%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d3
+		width: 3.5em
+		right: 120%
+		bottom: 15%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d4
+		width: 3.5em
+		right: 90%
+		top: -5%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d5
+		width: 5em
+		right: 95%
+		top: 17%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d6
+		width: 5em
+		left: 75%
+		top: 7%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d7
+		width: 5em
+		right: 105%
+		top: 50%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d8
+		width: 5em
+		right: 10%
+		top: 130%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d9
+		width: 16.8em
+		right: 105%
+		top: 15%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d10
+		width: 33em
+		left: 90%
+		top: 5%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d11
+		width: 72.8em
+		left: 105%
+		top: 10%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d12
+		width: 7em
+		right: 105%
+		top: 90%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d13
+		width: 46em
+		right: 78%
+		top: 90%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d14
+		width: 25em
+		left: 85%
+		top: 90%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d15
+		width: 5em
+		left: 0
+		top: -23%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d16
+		width: 4em
+		left: 50%
+		top: -5%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d17
+		width: 4em
+		left: 20%
+		bottom: 10%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d18
+		width: 3em
+		left: 98%
+		bottom: 13%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d19
+		width: 46em
+		left: 10%
+		top: -58%
+		&._lazyAnimation
+			opacity: 0 !important
+		&._animGo
+			transition: opacity 1s
+			opacity: 1 !important
+	&._d20
+		width: 4em
+		left: 85%
+		top: -60%
+	&._d21
+		width: 5em
+		left: 35%
+		top: -110%
+	&._d22
+		width: 46em
+		left: 65%
+		top: 50%
+
+
+
+.sectionRecipes
+	padding: 10em 0 23em
+	text-align: center
+	font-size: 10px
+	.recipesSlider
+		margin-top: 8em
+	&._t2
+		padding-top: 0
+		padding-bottom: 12em
+	.title_1
+		&._lazyAnimation
+			opacity: 0
+			transform: translate(0,-30px)
+		&._animGo
+			transition: opacity 1s, transform 1s
+			opacity: 1
+			transform: translate(0,0)
+
+.title_1
+	font-size: 4.7em
+	font-weight: 500
+
+
+.navigation_1
+	>div
+		color: #fff
+		position: absolute
+		top: 40%
+		transform: translate(0,-50%)
+		z-index: 1
+		//font-size: 55px
+		cursor: pointer
+		transition: background .15s, opacity .15s , visibility .15s
+		width: 7em
+		height: 7em
+		border: 1px solid $red
+		border-radius: 50%
+		background-color: #fff
+		&:hover
+			background-color: $red
+			svg
+				stroke: #fff
+			//opacity: .7
+		&.swiper-button-disabled
+			opacity: 0
+			visibility: hidden
+		svg
+			fill: $red
+			stroke: $red
+			transition: stroke .15s
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			width: 18%
+			height: 50%
+	.button-next
+		right: -3.5em
+		svg
+			transform: translate(-50%,-50%) rotate(180deg)
+	.button-prev
+		left: -3.5em
+		svg
+			transform: translate(-60%,-50%)
+
+
+.swiper-lazy-preloader
+	border-color: $red
+	border-top-color: transparent
+
+
+.item_1
+	display: flex
+	flex-wrap: wrap
+	//border: 1px solid red
+	height: 100%
+	align-items: flex-start
+	//border: 1px solid red
+	&:active
+		top: 3px
+		position: relative
+	&:hover
+		.button_1
+			background-color: $red
+			color: #fff !important
+		.img
+			img
+				transform: translate(-50%,-50%) scale(1.1)
+		.plugItem
+			opacity: 1
+	&._close
+		.button_1
+         background: none
+         color: $red !important
+         &:active
+            background: none !important
+            color: $red !important
+	.img
+		width: 100%
+		padding-bottom: 143%
+		background-size: cover
+		background-position: center
+		border-radius: .8em
+		background-repeat: no-repeat
+		position: relative
+		//border: 1px solid red
+		overflow: hidden
+		img
+			position: absolute
+			min-width: 100%
+			min-height: 100%
+			max-width: none
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			transition: transform 1s
+	.name
+		font-size: 3.4em
+		font-weight: 500
+		margin-top: 1em
+	.button_1
+		margin-top: 1.6em
+		font-size: 2.5em
+		padding: .8em .8em
+		transition: background .2s, color .2s
+		align-self: flex-end
+	.content
+		width: 100%
+
+
+
+.recipesSlider
+	position: relative
+	//border: 1px solid red
+	.swiper-slide
+		opacity: 0
+		height: auto
+		//border: 1px solid green
+		transition: opacity .5s
+	.swiper-slide-active, .swiper-slide-next, .swiper-slide-next + .swiper-slide
+		opacity: 1
+	.item_1
+		&._lazyAnimation
+			opacity: 0
+			transform: translate(0, -30px)
+		&._animGo
+			opacity: 1
+			transform: translate(0,0)
+			transition: opacity 1s, transform 1s
+
+.plugItem
+	position: absolute
+	height: 100%
+	width: 100%
+	top: 0
+	left: 0
+	z-index: 0
+	opacity: 0
+	transition: opacity .2s
+	&:before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(#fff, .3)
+		z-index: -1
+	&:after
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		z-index: -1
+		background: linear-gradient(to top, $red -10%, transparent 100%)
+	.bend
+		background-color: $red
+		font-size: 2.4em
+		text-transform: uppercase
+		color: #fff
+		top: 15%
+		position: absolute
+		left: -5%
+		width: 110%
+		transform: rotate(-8deg)
+		padding: .3em 5%
+	.text
+		position: absolute
+		bottom: 8%
+		font-size: 2.5em
+		font-weight: 500
+		color: #fff
+		padding: 0 .8em
+
+
+
+.aboutSection
+	background-color: $red
+	padding: 13em 0 10em
+	font-size: 10px
+	.contain
+		z-index: 0
+		position: relative
+
+.aboutDoubleItems
+	display: flex
+	.item
+		position: relative
+		//border: 1px solid #fff
+		&:first-child
+			width: 55%
+			padding-right: 10%
+			padding-top: 5em
+			&._lazyAnimation
+				opacity: 0
+				transform: translate(-30px, 0)
+			&._animGo
+				opacity: 1
+				transform: translate(0,0)
+				transition: opacity 1s, transform 1s
+		&:nth-child(2)
+			width: 45%
+			&._lazyAnimation
+				opacity: 0
+				transform: translate(30px, 0)
+			&._animGo
+				opacity: 1
+				transform: translate(0,0)
+				transition: opacity 1s, transform 1s
+	.logo
+		fill: #fff
+		width: 100%
+		max-width: 35em
+		height: 5.5em
+	.aboutText
+		margin-bottom: 6em
+		margin-top: 6em
+	.button_1
+		max-width: 13.6em
+		font-size: 2.5em
+		padding: 1em 1.5em 1em
+	.wow
+		position: absolute
+		left: 65%
+		margin-top: -4em
+		width: 24.5em
+		&._animGo
+			animation: blink-animation 2s 2
+
+
+@keyframes blink-animation
+	0%
+		opacity: 1
+	50%
+		opacity: 0
+	100%
+		opacity: 1
+
+
+
+.phoneImg
+	//width: 47rem
+	//border: 1px solid #fff
+	position: relative
+	padding-bottom: 133%
+	width: 100%
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		max-width: 100%
+		max-height: 100%
+
+
+.aboutText
+	color: #fff
+	p
+		margin-bottom: 1.5em
+		font-size: 3.4em
+		&:last-child
+			margin-bottom: 0
+
+
+#footer
+	color: #fff
+	.top
+		padding: 5rem 0
+	.bottom
+		padding: 7rem 0 3rem
+		border-top: 5px solid #000
+	.ligal
+		max-width: 1000px
+		margin-left: auto
+		margin-right: auto
+		font-size: 14px
+		&._lazyAnimation
+			opacity: 0
+			transform: translate(0, 30px)
+		&._animGo
+			opacity: 1
+			transform: translate(0, 0)
+			transition: opacity 1s, transform 1s
+		p
+			line-height: 1.4
+			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 0
+
+
+
+
+.wrap_footer_elem
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+	&._lazyAnimation
+		opacity: 0
+		transform: translate(0, 30px)
+	&._animGo
+		opacity: 1
+		transform: translate(0, 0)
+		transition: opacity 1s, transform 1s
+
+
+.footerNav
+	font-size: 18px
+	ul
+		list-style-type: none
+		display: flex
+	li
+		margin-right: 3rem
+		&:last-child
+			margin-right: 0
+	a
+		transition: color .25s
+		color: #fff
+		&:hover
+			color: #E60086
+
+
+
+.button_6
+	text-transform: uppercase
+	font-family: $myr
+	border: 2px solid #fff
+	border-radius: 50px
+	padding: 7px 20px
+	font-size: 13px
+	font-weight: 600
+	background: none
+	text-decoration: none
+	transition: border .25s
+	color: #fff !important
+	display: inline-block
+	&:hover
+		border-color: #E60086
+	&:active
+		top: 3px
+		border-color: #fff
+
+
+.copyright
+	text-align: center
+	opacity: .5
+	font-size: 18px
+	margin-top: 3rem
+	color: #fff
+
+
+.logoFooter
+	display: inline-block
+	max-width: 120px
+	svg
+		max-width: 100%
+		fill: #fff
+		max-height: 48px
+
+.bottomAlert
+	padding: 20px 5rem
+	font-size: 14px
+	text-align: center
+	background-color: #fff
+	color: #888
+	font-weight: 500
+	position: relative
+	a
+		color: #E60086
+		//border-bottom: 1px solid #E60086
+	.close
+		stroke: #E60086
+		width: 20px
+		height: 20px
+		position: absolute
+		right: 20px
+		top: 50%
+		transform: translate(0,-50%)
+		cursor: pointer
+		transition: stroke .15s
+		&:hover
+			stroke: #666
+		
+
+
+// burger ==============================================================
+
+.burgerButton
+	width: 4em
+	height: 4em
+	border: 2px solid #000
+	border-radius: 50%
+	position: relative
+	display: none
+	svg
+		stroke: #000
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		max-width: 50%
+		max-height: 50%
+		transition: opacity .25s
+	.open
+		width: 15px
+	.open
+		opacity: 0
+	&._open
+		.open
+			opacity: 1
+		.close
+			opacity: 0
+
+
+.burgerMenu
+	position: fixed
+	z-index: 21
+	background-color: #fff
+	width: 100%
+	max-width: 400px
+	//margin-left: auto
+	//margin-right: auto
+	top: 0
+	left: 50%
+	//padding: 63px 20px 5rem
+	// display: none
+	padding: 5rem 20px
+	//right: 0
+	overflow: auto
+	height: calc(100% - 150px)
+	min-height: calc(100vh - 150px)
+	transform: translate3d(-50%,-100%,0)
+	border-radius: 1em
+	box-shadow: 0 0 20px 0px rgba(darken($red, 20%), .5)
+	&._addTransition
+		transition: transform .8s cubic-bezier(0.455, 0.03, 0.515, 0.955) //cubic-bezier(0.25, 0.46, 0.45, 0.94) //cubic-bezier(0.445, 0.05, 0.55, 0.95) //cubic-bezier(0.39, 0.575, 0.565, 1)
+	&._show
+		transform: translate3d(-50%,100px,0)
+		//top: 100px
+	.title
+		font-size: 4rem
+		font-weight: 700
+		color: $red
+		margin: 0 0 30px
+		position: relative
+		padding-right: 5rem
+	.burgerContent
+		max-width: 500px
+		margin-left: auto
+		margin-right: auto
+	.closeBurger
+		stroke: $red
+		width: 3rem
+		height: 3rem
+		position: absolute
+		top: 1rem
+		right: 0
+		cursor: pointer
+		transition: stroke .15s
+		&:hover
+			stroke: darken($red, 10%)
+		&:active
+			top: calc(1rem + 3px)
+
+.burgerBg
+	background-color: rgba($red,.7)
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	z-index: 20
+	visibility: hidden
+	opacity: 0
+	display: block
+	transition: opacity .8s, visibility .8s
+	&._active
+		opacity: 1
+		visibility: visible
+
+
+.burgerUl
+	list-style-type: none
+	font-size: 19px
+	font-weight: 500
+	>li
+		border-bottom: 1px dashed rgba(#666, .3)
+		&:last-child
+			border-bottom: none
+		>a
+			color: #666
+			padding: 15px 0
+			display: inline-block
+			width: 100%
+			position: relative
+			transition: color .3s
+			&:before
+				content: ''
+				position: absolute
+				top: 0
+				left: -20px
+				width: calc(100% + 40px)
+				background-color: #fff
+				height: 100%
+				z-index: -1
+				transition: background .3s
+	._active
+		color: #000
+		padding-left: 30px
+		pointer-events: none
+		&:before
+			background-color: #FFF7DF
+
+
+
+.closeIcon
+	position: relative
+	width: 36px
+	height: 36px
+	cursor: pointer
+	display: block
+	&:before
+		content: ''
+		width: 100%
+		height: 4px
+		background: #000
+		transition: all 0.3s
+		backface-visibility: hidden
+		display: block
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%) rotate(45deg)
+		border-radius: 5px
+	&:after
+		content: ''
+		width: 100%
+		height: 4px
+		background: #000
+		transition: all 0.3s
+		backface-visibility: hidden
+		display: block
+		// transform: rotate(-45deg)
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%) rotate(-45deg)
+		border-radius: 5px
+
+
+.recipeMain
+	font-size: 10px
+	padding: 9.8em 0 9em
+	.contain
+		padding-top: 10em
+
+
+.qrItem
+	width: 29.5em
+	height: 29.5em
+	margin-bottom: -19.5em
+	background-color: #fff
+	border-radius: 5px
+	overflow: hidden
+	position: relative
+	grid-column: 1/2
+	grid-row: 8/10
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%,-50%)
+		max-width: 90%
+		max-height: 90%
+	&._t2
+		width: 35em
+		height: 35em
+		margin-bottom: -19.5em
+	&._t3
+		width: 39em
+		height: 39em
+		margin-bottom: -19.5em
+
+
+.doubleMainRecipe
+	display: grid
+	grid-template-columns: 1fr 1fr
+	//border: 1px solid green
+	column-gap: 4%
+	.imgWrap
+		//border: 1px solid red
+		grid-column: 1/2
+		grid-row: 1/5
+		order: -1
+		padding-bottom: 5em
+	.img
+		width: 100%
+		padding-bottom: 80%
+		background-size: cover
+		background-repeat: no-repeat
+		border-radius: 8px
+		background-position: center
+		background-color: #eee
+	.infoBlock
+		//border: 1px solid red
+		grid-row: 2/10
+		.alertRecipe
+			margin-bottom: 1.5em
+		.ingredientsList
+			margin-top: 2.5em
+	.title_1
+		font-size: 4.7em
+		font-weight: 500
+		//border: 1px solid red
+		grid-column: 2/3
+		grid-row: 1/2
+		margin-bottom: .7em
+		&._hide
+			display: none
+	.ingredients
+		font-size: 2.1em
+		font-weight: 700
+		text-transform: uppercase
+		//margin-top: 1.8em
+	.afterImg
+		//border: 1px solid red
+		grid-column: 1/2
+		padding-bottom: 5em
+		.alertRecipe
+			max-width: 430px
+			margin-top: 2em
+	&._grecheski_desert
+		.img
+			padding-bottom: 110%
+	&._desert_vietnam
+		.img
+			padding-bottom: 105%
+	&._desert_maldivi
+		.img
+			padding-bottom: 87%
+
+
+.afterImg
+	padding-right: 10em
+	position: relative
+	.ingredientsList
+		margin-top: 0
+	.arrow
+		position: absolute
+		right: 0
+		width: 9em
+
+.ingredientsList
+	.title
+		margin-bottom: 1em
+		font-size: 2.1em
+		font-weight: 700
+
+.alertRecipe
+	background-color: #FFF7DF
+	padding: 20px 20px
+	font-size: 2.1em
+	font-weight: 500
+	line-height: 1.1
+	strong
+		display: block
+		margin-bottom: .5em
+	p
+		margin-bottom: .5em
+		&:last-child
+			margin-bottom: 0
+
+.list_1
+	list-style-type: none
+	font-size: 2.1em
+	font-weight: 500
+	li
+		margin-bottom: .8em
+		position: relative
+		padding-left: 2em
+		&:before
+			content: ''
+			position: absolute
+			left: 0
+			top: .25em
+			border-radius: 50%
+			width: .48em
+			height: .48em
+			border: 4px solid #000
+		&:last-child
+			margin-bottom: 0
+	&._t2
+		li
+			padding-left: 1.2em
+			margin-bottom: 1.2em
+			&:before
+				width: .3em
+				height: .3em
+				border: 3px solid #000
+				top: .43em
+			&:last-child
+				margin-bottom: 0
+
+
+
+.orderSection
+	background-color: $red
+	padding: 18em 0 10em
+	font-size: 10px
+	color: #fff
+
+.orderContent
+	position: relative
+	z-index: 0
+	//border: 1px solid #fff
+	.logo
+		width: 31.7em
+		height: 4.7em
+		position: relative
+		//border: 1px solid #fff
+		fill: #fff
+	.text
+		font-size: 4.7em
+		font-weight: 500
+		margin-top: .8em
+		span
+			color: #000
+	.list_1
+		margin-top: 1.6em
+	.wow
+		position: absolute
+		left: 57%
+		top: -25%
+		width: 25em
+		&._hide
+			width: 15em
+			transform: rotate(10deg)
+			display: none
+		&._animGo
+			animation: blink-animation 2s 2
+
+.cookingSection
+	font-size: 10px
+	padding-top: 10em
+	padding-bottom: 10em
+	.title_2
+		margin-bottom: .2em
+	.imgBottom
+		//border: 1px solid red
+		width: 100%
+		padding-bottom: 60%
+		position: relative
+		z-index: -1
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
+			max-width: 100%
+		&._t2
+			max-width: 20.6em
+			padding-bottom: 20%
+			//border: 1px solid red
+			margin-top: -2.8em
+		&._t3
+         img
+            max-height: 100%
+            width: auto
+.title_2
+	font-size: 4.7em
+	color: $red
+
+.cookingListWrap
+	margin-top: 3.5em
+	.title
+		font-size: 2.1em
+		text-transform: uppercase
+		font-weight: 700
+		padding-left: 2.4em
+	.cookingList
+		margin-top: 3.2em
+
+.cookingList
+   //font-size: .5em
+   list-style-type: none
+   font-weight: 500
+   //columns: 2
+   .num
+   	min-width: 1.5em
+   	width: 1.5em
+   	height: 1.5em
+   	background-color: #FFF7DF
+   	border-radius: 50%
+   	text-align: center
+   	color: $red
+   	font-size: 1.2em
+   	font-weight: 700
+   	display: block
+   	line-height: 1.5em
+   	margin-right: 15px
+   li
+   	font-size: 2em
+   	display: flex
+   	align-items: flex-start
+   	//border-bottom: 1px dashed rgba(#666, .3)
+   	padding: 1.5em 0 0
+   	position: relative
+   	&:first-child
+   		padding-top: 0
+   	&:last-child
+   		.content
+   			border: none
+   .content
+   	padding-top: 5px
+   	line-height: 1.5
+   	border-bottom: 1px dashed rgba(#666, .3)
+   	padding-bottom: 1.5em
+   	.alertRecipe
+   		font-size: 1em
+   		margin-top: 1.4em
+   		line-height: 1.4
+   .arrow
+   	position: absolute
+   	z-index: -1
+   ._a1
+   	top: 1em
+   	left: 60%
+   	width: 5em
+   ._a2
+   	top: 1em
+   	left: 30%
+   	width: 5em
+   	transform: scale(-1,1)
+   ._a3
+   	top: 1.5em
+   	left: 60%
+   	width: 5em
+   ._a4
+   	top: 2.6em
+   	left: 60%
+   	width: 4em
+   ._a5
+   	top: 4em
+   	left: 60%
+   	width: 4em
+   ._a6
+      top: 0em
+      left: 65%
+      width: 5em
+   .line
+   	position: relative
+   	display: inline-block
+   	img
+   		position: absolute
+   		left: -10%
+   		top: 100%
+   		width: 120%
+   		max-width: 120%
+   		height: 1em
+
+.cookingDouble
+	display: flex
+	justify-content: space-between
+	.item
+		width: 48%
+
+
+.promocodeItem
+	margin-top: 5rem
+	font-size: 16px
+	font-weight: 500
+	display: none
+	.title
+		text-transform: uppercase
+		margin-bottom: 15px
+	.inputPromo
+		margin-bottom: 15px
+		max-width: 500px
+		position: relative
+		&:active
+			top: 3px
+			border-color: #000
+	.button_1
+		max-width: 300px
+		margin-top: 30px
+	.ref_2
+		//opacity: .7
+		margin-top: 25px
+	.copytext
+		position: relative
+		display: inline-block
+		&:active
+			top: 3px
+			color: #000
+	.arrow
+		position: absolute
+		bottom: 10px
+		width: 50px
+		right: -50px
+		&._animGo
+			animation: blink-animation 2s 2
+
+.ref_2
+	text-decoration: underline !important
+	display: inline-block
+	position: relative
+	&:active
+		top: 3px
+		color: #000 !important
+		
+
+.inputPromo
+	border: 2px dashed #fff
+	font-size: 4.6rem
+	font-family: $euc
+	color: #000
+	border-radius: 5px
+	padding: 15px 10px
+	transition: border .15s
+	width: 100%
+	appearance: none
+	text-transform: uppercase
+	text-align: center
+	font-weight: 500
+	background-color: rgba(#fff, .3)
+ 	//&:focus
+ 		//border-color: $blue
+
+
+
+
+
+
+
+
+// .inputWrap_1
+// 	text-align: left
+// 	width: 100%
+// 	.help-block
+// 		font-size: 12px
+// 		margin-top: 5px
+// 	.help-block-error
+// 		color: red
+
+
+// .input_1
+// 	border: 1px solid rgba(#898989, .6)
+// 	font-size: 14px
+// 	font-family: $myr
+// 	color: $black
+// 	border-radius: 5px
+// 	padding: 15px 10px
+// 	transition: border .15s
+// 	width: 100%
+// 	appearance: none
+// 	&:focus
+// 		border-color: $blue
+
+// textarea
+// 	&.input_1
+// 		resize: none
+// 		height: 138px
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus
+	transition: background-color 600000s 0s, color 600000s 0s
+
+.push
+	height: 1000px
+@import "media" // Всегда в конце

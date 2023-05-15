@@ -1,0 +1,792 @@
+@import "vars"
+
+
+
+@media only screen and (max-resolution: 3840dpi), only screen and (-webkit-max-device-pixel-ratio: 4)
+	#header
+		font-size: 8px
+	.sectionMain,.sectionRecipes,.aboutSection
+		font-size: 9px
+	.recipeMain, .orderSection, .cookingSection
+		font-size: 9px
+
+	.decoreImg
+		&._d19
+			top: -44%
+
+
+/*==========  Desktop First  ==========*/
+
+@media only screen and (max-width : 1600px)
+	/**/
+	#header
+		font-size: 9px
+
+
+	.sectionMain,.sectionRecipes,.aboutSection
+		font-size: 9px
+	.recipeMain, .orderSection, .cookingSection
+		font-size: 9px
+
+
+	.phoneImg
+		padding-bottom: 120%
+
+	//.decoreImg
+	//	&._d19
+	//		top: -55%
+
+
+
+	.navigation_1
+		font-size: 10px
+
+
+	//.logo_1
+	//	font-size: 9px
+
+	//#header
+	//	padding: 2rem 0
+	//	.logo_2
+	//		&:before
+	//			left: calc(-4rem - 3px)
+
+@media only screen and (max-width : 1330px)
+	/**/ 
+	.contain
+		max-width: 1200px !important
+
+	#header
+		font-size: 8px
+
+	.sectionMain,.sectionRecipes,.aboutSection
+		font-size: 8px
+
+	.item_1
+		.name
+			font-size: 3em
+
+	.phoneImg
+		padding-bottom: 110%
+
+	.aboutDoubleItems
+		.aboutText
+			br
+				display: none
+
+	.decoreImg
+		&._d19
+			left: 20%
+		&._d17
+			left: 29%
+		&._d16
+			left: 60%
+
+	._afterHeader
+		padding-top: 88px
+	.mainItem
+		padding-top: 8em
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+   /**/
+   html
+   	font-size: 9px
+   .contain
+   	max-width: 992px !important
+
+   #header
+   	font-size: 7px
+
+   .sectionMain,.sectionRecipes,.aboutSection
+   	font-size: 7px
+   .recipeMain, .orderSection, .cookingSection
+   	font-size: 8px
+
+   ._afterHeader
+   	padding-top: 77px
+
+   .imgBottom
+   	&._t4
+   		padding-bottom: 69%
+
+   .cookingList
+      .arrow
+         &._a6
+            left: 70%
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	html
+		font-size: 8px
+	.contain
+		max-width: 768px !important
+
+	#header
+		font-size: 6px
+
+	.sectionMain,.sectionRecipes,.aboutSection
+		font-size: 6px
+	.recipeMain, .cookingSection
+		font-size: 7.5px
+
+	._afterHeader
+		padding-top: 66px
+	.sectionMain
+		padding-bottom: 15em
+
+	.mainItem
+		.button_1
+			font-size: 3em
+
+	.plugItem
+		.text
+			font-size: 2.8em
+		.bend
+			font-size: 2.5em
+
+	.navigation_1
+		font-size: 10px
+		.button-prev
+			left: -2em
+		.button-next
+			right: -2em
+
+	.footerNav
+		font-size: 16px
+		li
+			margin-right: 15px
+
+	#footer
+		.button_6
+			font-size: 12px
+
+	.logoFooter
+		max-width: 100px
+	.copyright
+		margin-top: 2rem
+		font-size: 16px
+
+
+
+	.orderContent
+		//.wow
+		//	display: none
+		//	&._hide
+		//		width: 12em
+		//		display: block
+		.text
+			font-size: 4em
+
+
+	.decoreImg
+		&._d21
+			left: 40%
+		&._d22
+			width: 40em
+
+	.cookingList
+      .arrow
+         &._a1
+         	top: 3em
+         &._a3
+         	left: 70%
+         &._a6
+            top: 1em
+
+	.navigation_1
+		&>div
+			width: 5em
+			height: 5em
+
+	.qrItem
+		grid-row: 9/10
+
+	.doubleMainRecipe
+		.imgWrap
+			grid-row: 1/8
+		.title_1
+			font-size: 4.2em
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.contain
+		max-width: 650px !important
+
+	#header
+		font-size: 5px
+		.button_1
+			display: none
+	.burgerMenu
+		max-width: 100%
+		border-radius: 0
+		height: 100%
+		min-height: 100vh
+		transform: translate3d(-50%,-100%,0)
+		padding-top: 100px
+		&._show
+			transform: translate3d(-50%,0,0)
+		.closeBurger
+			display: none
+	.burgerButton
+		display: block
+		width: 8em
+		height: 8em
+
+	.logo_1
+		&:before
+			bottom: -10.2em
+
+	.sectionMain,.aboutSection
+		font-size: 5px
+
+	.sectionRecipes
+		font-size: 6.5px
+		.title_1
+			font-size: 4em
+
+	._afterHeader
+		padding-top: 63px
+	//.sectionMain
+	//	padding-top: 30em
+
+	.decoreImg
+		&._d8
+			top: 120%
+			right: auto
+			left: 90%
+		&._d13
+			width: 30em
+			top: 0
+			//right: auto
+			left: 50%
+			transform: translate(-50%, 0) rotate(50deg) !important
+		&._d20
+			display: none
+		&._d21
+			display: none
+		&._d22
+			display: none
+	.mainItem
+		padding-top: 30em
+		.logo
+			max-width: 50em
+			p
+				font-size: 2.5em
+		.t2, .t3
+			font-size: 3.5em
+		.button_1
+			font-size: 4em
+
+
+	.recipesSlider
+		//.swiper-slide
+		//	opacity: 0
+		//	transition: opacity .5s
+		.swiper-slide-next + .swiper-slide
+			opacity: 0
+		.swiper-slide-active, .swiper-slide-next
+			opacity: 1
+
+	.item_1
+		.button_1
+			font-size: 3em
+
+
+	.aboutDoubleItems
+		.item
+			&:first-child
+				padding-right: 0
+		.wow
+			margin-top: -5em
+			left: 76%
+		.button_1
+			font-size: 3.5em
+			margin-top: 1em
+
+
+
+	#footer
+		padding-bottom: 5rem
+		//padding-top: 5rem
+
+	.wrap_footer_elem
+		flex-wrap: wrap
+		justify-content: center
+		text-align: center
+		.logoFooter
+			margin-bottom: 30px
+			max-width: 200px
+		.footerNavWrap
+			width: 100%
+			margin-bottom: 40px
+		.footerNav
+			ul
+				flex-wrap: wrap
+			li
+				width: 100%
+				margin-right: 0
+				margin-bottom: 20px
+				&:last-child
+					margin-bottom: 0
+
+
+
+	.recipeMain
+		padding-bottom: 10em
+		.contain
+			padding-top: 8em
+
+	.doubleMainRecipe
+		flex-wrap: wrap
+		justify-content: center
+		max-width: 520px
+		margin-right: auto
+		margin-left: auto
+		display: flex
+		.imgWrap
+			width: 100%
+			padding-bottom: 0
+			order: 2
+		.img
+			padding-bottom: 70% !important
+		.infoBlock
+			width: 100%
+			margin-top: 3em
+			order: 3
+		.title_1
+			order: 1
+			font-size: 3.8em
+		.afterImg
+			margin-top: 3.5em
+			width: 100%
+			order: 4
+			padding-bottom: 0
+			.alertRecipe
+				max-width: 100%
+	
+	.afterImg
+		padding-right: 0
+		.arrow
+			display: none
+			
+	.qrItem
+		display: none
+
+	.orderSection
+		padding-top: 8em
+
+	.orderContent
+		text-align: center
+		.wow
+			display: none
+			&._hide
+				width: 10em
+				display: block
+				top: -2%
+				left: 80%
+		.text
+			font-size: 3em
+		.list_1
+			text-align: left
+
+
+
+	.cookingSection
+		&._despasito
+			.imgBottom
+				width: 70%
+				margin-top: -15%
+				margin-bottom: -15%
+		.imgBottom
+			&._t2
+				max-width: 20.6em
+				padding-bottom: 20%
+				//border: 1px solid red
+				margin-top: -15%
+				margin-left: auto
+				margin-right: auto
+				z-index: 0
+			&._t3
+				//max-width: 350px
+				width: 70%
+				padding-bottom: 40%
+			&._t4
+				padding-bottom: 35%
+				width: 50%
+				margin-top: 0
+				margin-bottom: -5%
+		&._santyago
+			.cookingDouble
+				.item
+					&:last-child
+						.cookingList
+							li
+								&:last-child
+									.alertRecipe
+										padding-bottom: 5em
+
+	.cookingListWrap
+		margin-top: 4em
+
+	.cookingDouble
+		flex-wrap: wrap
+		.item
+			width: 100%
+
+	.promocodeItem
+		display: block
+
+	.cookingList
+		.arrow
+         &._a1
+         	width: 4em
+         	left: 70%
+         	top: 2.5em
+         &._a2
+         	width: 4em
+         &._a3
+         	//top: 1.5em
+         	//left: 80%
+         	width: 4em
+         &._a6
+            left: 40%
+	.title_2
+		font-size: 4em
+
+
+
+
+
+
+@media only screen and (max-width : 650px)
+
+	.contain
+		max-width: 550px !important
+		
+	.decoreImg
+		&._d1
+			display: none
+		&._d4
+			left: 105%
+			top: 30%
+		&._d5
+			right: 75%
+			top: 10%
+		&._d10
+			//display: none
+			top: 25%
+			left: -5%
+			width: 20em
+			transform: rotate(150deg)
+		&._d7
+			right: 0
+			top: 20%
+		&._d6
+			left: 75%
+			top: 15%
+		&._d22
+			left: 50%
+			top: 100%
+		&._d10
+			transform: rotate(150deg) !important
+		&._d16
+			left: 80%
+		&._d19
+			width: 35em
+			left: 22%
+		&._d22
+			width: 45%
+			top: 85%
+
+	//.mainItem
+		//padding-top: 25em
+
+
+
+
+	.orderContent
+		.wow
+			&._hide
+				top: 25%
+				left: 85%
+		.text
+			span
+				font-weight: 600
+				margin-top: 10px
+				display: block
+
+
+
+
+@media only screen and (max-width : 550px)
+
+	.contain
+		max-width: 480px !important
+		
+	#header
+		.left
+			align-items: center
+		.logo_min
+			display: block
+			margin-right: 8em
+		.logo_1
+			display: none
+		.logo_2
+			&:before
+				height: 130%
+				top: 50%
+				transform: translate(0,-50%)
+				background-color: #000
+
+
+	._afterHeader
+		padding-top: 55px
+	.aboutSection
+		padding-top: 13em
+
+	.decoreImg
+		&._d8
+			display: none
+		&._d10
+			top: 18%
+		//	&._d15
+		//		top: -15%
+		//	&._d16
+		//		left: 80%
+		//	&._d17
+		//		left: auto
+		//		right: 90%
+		//	&._d19
+		//		left: 32%
+		&._d13
+			width: 25em
+			top: 0
+
+	.mainItem
+		padding-top: 23em
+		&:before
+			box-shadow: 0 0 30em 40em rgba(#fff, .9)
+			top: 25%
+			left: 40%
+	.aboutDoubleItems
+		.item
+			&:first-child
+				width: 100%
+				padding-right: 0
+				max-width: 300px
+				margin: 0 auto
+				text-align: center
+				padding-top: 0
+			&:nth-child(2)
+				display: none
+		//.logo
+		//	margin-left: auto
+		//	margin-right: auto
+		//	display: block
+		.aboutText
+			text-align: left
+		.wow
+			transform: translate(-50%,0) scale(-1,1)
+			left: 50%
+		.button_1
+			margin-top: 5em
+
+
+	#header
+		padding: 1.5em 0
+
+	//.burgerMenu
+	//	padding-top: 55px
+
+	.recipeMain
+		.contain
+			padding-top: 6em
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+	#header
+		.logo_2
+			max-width: 27em
+
+	.recipesSlider
+		max-width: 350px
+		margin: 0 auto
+		.swiper-slide-next
+			opacity: 0
+		.item_1
+			max-width: 300px
+			margin-right: auto
+			margin-left: auto
+
+	.bottomAlert
+		.close
+			right: 10px
+
+	.burgerUl
+		font-size: 17px
+
+	.decoreImg
+		//&._d10
+		//	top: -5%
+		//	left: -10%
+		&._d22
+			top: 100%
+			
+	.orderContent
+		.wow
+			&._hide
+				width: 70px
+				right: 0
+				left: auto
+		//		display: none
+		.text
+			font-size: 2.5em
+
+	.title_2
+		font-size: 3.5em
+
+	.cookingSection
+		padding-top: 8em
+	.orderSection
+		padding-bottom: 8em
+
+
+	#footer
+		.ligal
+			font-size: 12px
+
+
+	.cookingList
+		.arrow
+			&._a3
+				top: 2.5em
+
+	.cookingSection
+		.imgBottom
+			&._t4
+				width: 70%
+				padding-bottom: 50%
+
+	.list_1
+		font-size: 1.9em
+
+	.doubleMainRecipe
+		.title_1
+			font-size: 3.3em
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 380px)
+	/**/
+
+	//.sectionMain
+	//	padding-top: 20em
+
+	.decoreImg
+		&._d5
+			top: 5%
+		&._d13
+			top: -1%
+			width: 20em
+		&._d10
+			left: -10%
+			top: 10%
+	.mainItem
+		padding-top: 18em
+		.logo
+			max-width: 45em
+			p
+				font-size: 2.2em
+		//.t1
+			//font-size: 4em
+		.button_1
+			margin-top: 2.5em
+
+	.promocodeItem
+		.arrow
+			transform: rotate(-20deg)
+			right: -40px
+
+	.recipesSlider
+		.item_1
+			max-width: 250px
+			//.img
+				//padding-bottom: 120%
+			.button_1
+				padding: .5em .5em
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 321px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 481px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 769px)
+	/**/
+	//.burgerMenu, .burgerBg
+	//	display: none !important
+
+	//.burgerMenu
+	//	padding-top: 10rem
+
+	//body
+	//	&._noScrollBurger
+	//		overflow: auto
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 993px)
+	/**/
+
+	.button_1
+		&:hover
+			background-color: $red
+			color: #fff !important
+		&._t2
+			&:hover
+				background-color: #fff
+				color: $red !important
+		&._t3
+			&:hover
+				background-color: darken($red, 10%)
+		&._t4
+			&:hover
+				background-color: lighten($red, 35%)
+				color: $red !important
+
+
+	.ref_1
+		transition: color .15s
+		&:hover
+			color: #E60086
+
+	.burgerUl
+		>li
+			>a
+				&:hover
+					color: $red
+					&:before
+						background-color: rgba($red, .05)
+
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1201px)
+	/**/
+
